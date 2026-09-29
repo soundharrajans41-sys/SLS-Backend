@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * any request here requires a valid JWT (see JwtAuthFilter).
  */
 @RestController
-@RequestMapping("/api/users")
+@RequestMapping({"/api/users", "/users"})
 public class UserController {
 
     private final UserRepository userRepository;
